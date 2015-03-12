@@ -1,0 +1,43 @@
+{
+  "uuid": "106eb745-9abc-403d-ab18-532c68bc0ecd",
+  "shortName": "ArcTime",
+  "longName": "ArcTime",
+  "companyName": "Si Te Feng",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "TWO",
+        "file": "two.png"
+      },
+      {
+        "type": "png",
+        "name": "SIX",
+        "file": "SIX.png"
+      },
+      {
+        "type": "png",
+        "name": "NINE",
+        "file": "NINE.png"
+      },
+      {
+        "type": "png",
+        "name": "SEVEN",
+        "file": "SEVEN.png"
+      }
+    ]
+  }
+}
