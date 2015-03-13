@@ -199,9 +199,9 @@ static void draw_update_proc(Layer *this_layer, GContext *ctx) {
     graphics_context_set_fill_color(ctx, GColorWhite);
     #endif
 
-    int32_t hr1 = hours >= 10 ? 1: 0;
+    int32_t hr1 = hours / 10;
     int32_t hr2 = hours % 10;
-    int32_t min1 = minutes >= 10 ? minutes/10 : 0;
+    int32_t min1 = minutes/10;
     int32_t min2 = minutes % 10;
     drawNumber(ctx, hr1, 0);
     drawNumber(ctx, hr2, 1);
