@@ -116,6 +116,7 @@ static void drawNumber(GContext *ctx, int number, int position) {
         GBitmap *bitmap = gbitmap_create_with_resource(RESOURCE_ID_TWO);
         graphics_draw_bitmap_in_rect(ctx, bitmap, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
         drawBallEndArc(ctx, GPoint(center.x, center.y - 10), 25, TRIG_MAX_ANGLE * 0.51, TRIG_MAX_ANGLE *0.1);
+        drawDot(ctx, GPoint(center.x + 19, center.y + 22));
         break;
       }
       case 3: {
@@ -147,8 +148,8 @@ static void drawNumber(GContext *ctx, int number, int position) {
       case 6: {
         GBitmap *bitmap = gbitmap_create_with_resource(RESOURCE_ID_SIX);
         graphics_draw_bitmap_in_rect(ctx, bitmap, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
-
         drawBallEndArc(ctx, GPoint(center.x, center.y + 11), 22, TRIG_MAX_ANGLE * 0.7, TRIG_MAX_ANGLE *0.4);
+        drawDot(ctx, GPoint(center.x + 3, center.y - 34));
       }
         break;
       case 7: {
@@ -173,6 +174,7 @@ static void drawNumber(GContext *ctx, int number, int position) {
         GBitmap *bitmap = gbitmap_create_with_resource(RESOURCE_ID_NINE);
         graphics_draw_bitmap_in_rect(ctx, bitmap, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
         drawBallEndArc(ctx, GPoint(center.x - 3, center.y - 12), 23, TRIG_MAX_ANGLE * 0.25, TRIG_MAX_ANGLE *0.95);
+        drawDot(ctx, GPoint(center.x - 5, center.y + 29));
         break;
       }
     }
@@ -188,7 +190,6 @@ static void draw_update_proc(Layer *this_layer, GContext *ctx) {
     int32_t minutes = tick_time->tm_min;
 
     GRect bounds = layer_get_bounds(this_layer);
-    GPoint center = GPoint(bounds.size.w / 2, bounds.size.h / 2);
 
     #ifdef PBL_COLOR
     graphics_context_set_stroke_color(ctx, GColorMelon);

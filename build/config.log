@@ -1,6 +1,6 @@
-# project  configured on Thu Mar 12 02:58:11 2015 by
+# project  configured on Thu Mar 12 21:36:46 2015 by
 # waf 1.7.11 (abi 98, python 20706f0 on darwin)
-# using /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp1/Pebble/waf configure build
+# using /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/waf configure build
 #
 ----------------------------------------
 Setting top to
@@ -9,8 +9,8 @@ Setting top to
 Setting out to
 /Users/sfeng/Documents/pebble/ArcTime/build
 ----------------------------------------
-Found Pebble SDK for aplite in:
-/Users/sfeng/pebble-dev/PebbleSDK-3.0-dp1/Pebble/aplite
+Found Pebble SDK for basalt in:
+/Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt
 ----------------------------------------
 Checking for program gcc,cc
 arm-none-eabi-gcc
@@ -20,8 +20,8 @@ Checking for program ar
 arm-none-eabi-ar
 find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-ar'
 ----------------------------------------
-Found Pebble SDK for basalt in:
-/Users/sfeng/pebble-dev/PebbleSDK-3.0-dp1/Pebble/basalt
+Found Pebble SDK for aplite in:
+/Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/aplite
 ----------------------------------------
 Checking for program gcc,cc
 arm-none-eabi-gcc
