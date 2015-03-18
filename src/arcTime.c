@@ -200,8 +200,6 @@ static void draw_update_proc(Layer *this_layer, GContext *ctx) {
     int32_t hours = tick_time->tm_hour;
     int32_t minutes = tick_time->tm_min;
 
-    GRect bounds = layer_get_bounds(this_layer);
-
     #ifdef PBL_COLOR
     graphics_context_set_stroke_color(ctx, GColorMelon);
     graphics_context_set_fill_color(ctx, GColorMelon);
