@@ -6,6 +6,7 @@ static GBitmap *bitmap2;
 static GBitmap *bitmap6;
 static GBitmap *bitmap7;
 static GBitmap *bitmap9;
+struct tm *tick_time;
 
 static void drawPixel(GContext *ctx, GPoint center, int32_t r, int32_t angle) {
     int32_t x = r * cos_lookup(angle)/TRIG_MAX_RATIO;
@@ -196,7 +197,7 @@ static void draw_update_proc(Layer *this_layer, GContext *ctx) {
 
     // Get the time.
     time_t temp = time(NULL);
-    struct tm *tick_time = localtime(&temp);
+    tick_time = localtime(&temp);
     int32_t hours = tick_time->tm_hour;
     int32_t minutes = tick_time->tm_min;
 
