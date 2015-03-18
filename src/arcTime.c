@@ -2,7 +2,10 @@
 
 static Window *window;
 static Layer *drawLayer;
-
+static GBitmap *bitmap2;
+static GBitmap *bitmap6;
+static GBitmap *bitmap7;
+static GBitmap *bitmap9;
 
 static void drawPixel(GContext *ctx, GPoint center, int32_t r, int32_t angle) {
     int32_t x = r * cos_lookup(angle)/TRIG_MAX_RATIO;
@@ -113,8 +116,10 @@ static void drawNumber(GContext *ctx, int number, int position) {
         break;
       }
       case 2: {
-        GBitmap *bitmap = gbitmap_create_with_resource(RESOURCE_ID_TWO);
-        graphics_draw_bitmap_in_rect(ctx, bitmap, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
+        if (!bitmap2) {
+          bitmap2 = gbitmap_create_with_resource(RESOURCE_ID_TWO);
+        }
+        graphics_draw_bitmap_in_rect(ctx, bitmap2, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
         drawBallEndArc(ctx, GPoint(center.x, center.y - 10), 25, TRIG_MAX_ANGLE * 0.51, TRIG_MAX_ANGLE *0.1);
         drawDot(ctx, GPoint(center.x + 19, center.y + 22));
         break;
@@ -136,25 +141,29 @@ static void drawNumber(GContext *ctx, int number, int position) {
         break;
       }
       case 5: {
-        drawBallEndArc(ctx, GPoint(center.x - 3, center.y + 18), 20, TRIG_MAX_ANGLE * 0.6, TRIG_MAX_ANGLE *0.4);
-        GPoint p1 = GPoint(center.x + 20, center.y - 25);
-        GPoint p2 = GPoint(center.x - 20, center.y - 25);
-        GPoint p3 = GPoint(center.x - 20, center.y + 5);
+        drawBallEndArc(ctx, GPoint(center.x, center.y + 11.5), 17, TRIG_MAX_ANGLE * 0.6, TRIG_MAX_ANGLE *0.4);
+        GPoint p1 = GPoint(center.x + 17, center.y - 27);
+        GPoint p2 = GPoint(center.x - 14, center.y - 27);
+        GPoint p3 = GPoint(center.x - 14, center.y);
         drawDot(ctx, p1);
         drawThickLine(ctx, p1, p2, 2);
         drawThickLine(ctx, p2, p3, 2);
         break;
       }
       case 6: {
-        GBitmap *bitmap = gbitmap_create_with_resource(RESOURCE_ID_SIX);
-        graphics_draw_bitmap_in_rect(ctx, bitmap, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
+        if (!bitmap6) {
+          bitmap6 = gbitmap_create_with_resource(RESOURCE_ID_SIX);
+        }
+        graphics_draw_bitmap_in_rect(ctx, bitmap6, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
         drawBallEndArc(ctx, GPoint(center.x, center.y + 11), 22, TRIG_MAX_ANGLE * 0.7, TRIG_MAX_ANGLE *0.4);
         drawDot(ctx, GPoint(center.x + 3, center.y - 34));
       }
         break;
       case 7: {
-        GBitmap *bitmap = gbitmap_create_with_resource(RESOURCE_ID_SEVEN);
-        graphics_draw_bitmap_in_rect(ctx, bitmap, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
+        if (!bitmap7) {
+          bitmap7 = gbitmap_create_with_resource(RESOURCE_ID_SEVEN);
+        }
+        graphics_draw_bitmap_in_rect(ctx, bitmap7, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
         GPoint p1 = GPoint(center.x - 25, center.y - 22);
         GPoint p2 = GPoint(center.x - 15, center.y + 25);
         drawDot(ctx, p1);
@@ -171,8 +180,10 @@ static void drawNumber(GContext *ctx, int number, int position) {
         break;
       }
       case 9: {
-        GBitmap *bitmap = gbitmap_create_with_resource(RESOURCE_ID_NINE);
-        graphics_draw_bitmap_in_rect(ctx, bitmap, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
+        if (!bitmap9) {
+          bitmap9 = gbitmap_create_with_resource(RESOURCE_ID_NINE);
+        }
+        graphics_draw_bitmap_in_rect(ctx, bitmap9, GRect(center.x - size.w/4, center.y - size.h/4, size.w/2, size.h/2));
         drawBallEndArc(ctx, GPoint(center.x - 3, center.y - 12), 23, TRIG_MAX_ANGLE * 0.25, TRIG_MAX_ANGLE *0.95);
         drawDot(ctx, GPoint(center.x - 5, center.y + 29));
         break;

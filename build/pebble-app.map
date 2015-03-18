@@ -902,7 +902,7 @@ LOAD /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.
  .note.gnu.build-id
                 0x0000000000000084       0x24 linker stubs
 
-.text           0x00000000000000a8      0xdc4
+.text           0x00000000000000a8      0xe44
  *(.text)
  .text          0x00000000000000a8       0x14 /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
  .text          0x00000000000000bc      0x370 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/libgcc.a(_arm_addsubdf3.o)
@@ -941,145 +941,149 @@ LOAD /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.
                 0x00000000000005d8       0xaa src/arcTime.c.27.o
  *fill*         0x0000000000000682        0x6 
  .text.drawNumber
-                0x0000000000000688      0x5b0 src/arcTime.c.27.o
+                0x0000000000000688      0x630 src/arcTime.c.27.o
  .text.draw_update_proc
-                0x0000000000000c38       0x74 src/arcTime.c.27.o
+                0x0000000000000cb8       0x74 src/arcTime.c.27.o
  .text.startup.main
-                0x0000000000000cac       0x70 src/arcTime.c.27.o
-                0x0000000000000cac                main
+                0x0000000000000d2c       0x70 src/arcTime.c.27.o
+                0x0000000000000d2c                main
  .text.app_event_loop
-                0x0000000000000d1c        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d1c                app_event_loop
+                0x0000000000000d9c        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000d9c                app_event_loop
  .text.cos_lookup
-                0x0000000000000d28        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d28                cos_lookup
+                0x0000000000000da8        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000da8                cos_lookup
  .text.gbitmap_create_with_resource
-                0x0000000000000d34        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d34                gbitmap_create_with_resource
+                0x0000000000000db4        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000db4                gbitmap_create_with_resource
  .text.graphics_draw_bitmap_in_rect
-                0x0000000000000d40        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d40                graphics_draw_bitmap_in_rect
+                0x0000000000000dc0        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000dc0                graphics_draw_bitmap_in_rect
  .text.graphics_draw_line
-                0x0000000000000d4c        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d4c                graphics_draw_line
+                0x0000000000000dcc        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000dcc                graphics_draw_line
  .text.graphics_draw_pixel
-                0x0000000000000d58        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d58                graphics_draw_pixel
+                0x0000000000000dd8        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000dd8                graphics_draw_pixel
  .text.graphics_fill_circle
-                0x0000000000000d64        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d64                graphics_fill_circle
+                0x0000000000000de4        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000de4                graphics_fill_circle
  .text.layer_add_child
-                0x0000000000000d70        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d70                layer_add_child
+                0x0000000000000df0        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000df0                layer_add_child
  .text.layer_create
-                0x0000000000000d7c        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d7c                layer_create
+                0x0000000000000dfc        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000dfc                layer_create
  .text.layer_destroy
-                0x0000000000000d88        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d88                layer_destroy
+                0x0000000000000e08        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e08                layer_destroy
  .text.layer_get_bounds
-                0x0000000000000d94        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000d94                layer_get_bounds
+                0x0000000000000e14        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e14                layer_get_bounds
  .text.layer_mark_dirty
-                0x0000000000000da0        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000da0                layer_mark_dirty
+                0x0000000000000e20        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e20                layer_mark_dirty
  .text.layer_set_update_proc
-                0x0000000000000dac        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000dac                layer_set_update_proc
+                0x0000000000000e2c        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e2c                layer_set_update_proc
  .text.localtime
-                0x0000000000000db8        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000db8                localtime
- .text.memset   0x0000000000000dc4        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000dc4                memset
- .text.rand     0x0000000000000dd0        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000dd0                rand
+                0x0000000000000e38        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e38                localtime
+ .text.memset   0x0000000000000e44        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e44                memset
+ .text.rand     0x0000000000000e50        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e50                rand
  .text.sin_lookup
-                0x0000000000000ddc        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000ddc                sin_lookup
+                0x0000000000000e5c        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e5c                sin_lookup
  .text.tick_timer_service_subscribe
-                0x0000000000000de8        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000de8                tick_timer_service_subscribe
- .text.time     0x0000000000000df4        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000df4                time
+                0x0000000000000e68        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e68                tick_timer_service_subscribe
+ .text.time     0x0000000000000e74        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e74                time
  .text.window_create
-                0x0000000000000e00        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000e00                window_create
+                0x0000000000000e80        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e80                window_create
  .text.window_destroy
-                0x0000000000000e0c        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000e0c                window_destroy
+                0x0000000000000e8c        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e8c                window_destroy
  .text.window_get_root_layer
-                0x0000000000000e18        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000e18                window_get_root_layer
+                0x0000000000000e98        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000e98                window_get_root_layer
  .text.window_set_fullscreen
-                0x0000000000000e24        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000e24                window_set_fullscreen
+                0x0000000000000ea4        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000ea4                window_set_fullscreen
  .text.window_set_window_handlers
-                0x0000000000000e30        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000e30                window_set_window_handlers
+                0x0000000000000eb0        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000eb0                window_set_window_handlers
  .text.window_stack_push
-                0x0000000000000e3c        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000e3c                window_stack_push
+                0x0000000000000ebc        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000ebc                window_stack_push
  .text.graphics_context_set_fill_color
-                0x0000000000000e48        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000e48                graphics_context_set_fill_color
+                0x0000000000000ec8        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000ec8                graphics_context_set_fill_color
  .text.graphics_context_set_stroke_color
-                0x0000000000000e54        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000e54                graphics_context_set_stroke_color
+                0x0000000000000ed4        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000ed4                graphics_context_set_stroke_color
  .text.window_set_background_color
-                0x0000000000000e60        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
-                0x0000000000000e60                window_set_background_color
+                0x0000000000000ee0        0xc /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+                0x0000000000000ee0                window_set_background_color
  *(.rodata)
  *(.rodata*)
 
-.glue_7         0x0000000000000e6c        0x0
+.glue_7         0x0000000000000eec        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x0000000000000e6c        0x0
+.glue_7t        0x0000000000000eec        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000000e6c        0x0
+.vfp11_veneer   0x0000000000000eec        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000000000e6c        0x0
+.v4_bx          0x0000000000000eec        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x0000000000000e6c        0x0
+.iplt           0x0000000000000eec        0x0
  .iplt          0x0000000000000000        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
 
-.rel.dyn        0x0000000000000e6c        0x0
+.rel.dyn        0x0000000000000eec        0x0
  .rel.iplt      0x0000000000000000        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
 
-.data           0x0000000000000e6c        0x4
+.data           0x0000000000000eec        0x4
  *(.data)
- .data          0x0000000000000e6c        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crti.o
- .data          0x0000000000000e6c        0x4 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
-                0x0000000000000e6c                __dso_handle
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o
- .data          0x0000000000000e70        0x0 src/arcTime.c.27.o
- .data          0x0000000000000e70        0x0 basalt/appinfo.auto.c.27.o
- .data          0x0000000000000e70        0x0 /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/libgcc.a(_arm_addsubdf3.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/libgcc.a(_arm_fixdfsi.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtend.o
- .data          0x0000000000000e70        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtn.o
+ .data          0x0000000000000eec        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crti.o
+ .data          0x0000000000000eec        0x4 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+                0x0000000000000eec                __dso_handle
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x0000000000000ef0        0x0 src/arcTime.c.27.o
+ .data          0x0000000000000ef0        0x0 basalt/appinfo.auto.c.27.o
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/pebble-dev/PebbleSDK-3.0-dp3-rc4/Pebble/basalt/lib/libpebble.a(tmp3uAa2Zpebble.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/libgcc.a(_arm_fixdfsi.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtend.o
+ .data          0x0000000000000ef0        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtn.o
  *(.data.*)
 
-.igot.plt       0x0000000000000e70        0x0
+.igot.plt       0x0000000000000ef0        0x0
  .igot.plt      0x0000000000000000        0x0 /Users/sfeng/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
 
-.bss            0x0000000000000e70        0x8
+.bss            0x0000000000000ef0       0x18
  *(.bss)
  *(.bss.*)
+ .bss.bitmap2   0x0000000000000ef0        0x4 src/arcTime.c.27.o
+ .bss.bitmap6   0x0000000000000ef4        0x4 src/arcTime.c.27.o
+ .bss.bitmap7   0x0000000000000ef8        0x4 src/arcTime.c.27.o
+ .bss.bitmap9   0x0000000000000efc        0x4 src/arcTime.c.27.o
  .bss.drawLayer
-                0x0000000000000e70        0x4 src/arcTime.c.27.o
- .bss.window    0x0000000000000e74        0x4 src/arcTime.c.27.o
+                0x0000000000000f00        0x4 src/arcTime.c.27.o
+ .bss.window    0x0000000000000f04        0x4 src/arcTime.c.27.o
 
 DISCARD
  libc.a(*)
@@ -1130,16 +1134,16 @@ OUTPUT(/Users/sfeng/Documents/pebble/ArcTime/build/basalt/pebble-app.elf elf32-l
                                          0x71 (size before relaxing)
  .comment       0x0000000000000000       0x71 basalt/appinfo.auto.c.27.o
 
-.debug_info     0x0000000000000000     0x18f6
- .debug_info    0x0000000000000000     0x15d6 src/arcTime.c.27.o
- .debug_info    0x00000000000015d6      0x320 basalt/appinfo.auto.c.27.o
+.debug_info     0x0000000000000000     0x18e0
+ .debug_info    0x0000000000000000     0x15c0 src/arcTime.c.27.o
+ .debug_info    0x00000000000015c0      0x320 basalt/appinfo.auto.c.27.o
 
-.debug_abbrev   0x0000000000000000      0x42a
- .debug_abbrev  0x0000000000000000      0x38c src/arcTime.c.27.o
- .debug_abbrev  0x000000000000038c       0x9e basalt/appinfo.auto.c.27.o
+.debug_abbrev   0x0000000000000000      0x44a
+ .debug_abbrev  0x0000000000000000      0x3ac src/arcTime.c.27.o
+ .debug_abbrev  0x00000000000003ac       0x9e basalt/appinfo.auto.c.27.o
 
-.debug_loc      0x0000000000000000      0x936
- .debug_loc     0x0000000000000000      0x936 src/arcTime.c.27.o
+.debug_loc      0x0000000000000000      0x8d7
+ .debug_loc     0x0000000000000000      0x8d7 src/arcTime.c.27.o
 
 .debug_aranges  0x0000000000000000       0x88
  .debug_aranges
@@ -1154,10 +1158,10 @@ OUTPUT(/Users/sfeng/Documents/pebble/ArcTime/build/basalt/pebble-app.elf elf32-l
  .debug_line    0x0000000000000000      0x3a1 src/arcTime.c.27.o
  .debug_line    0x00000000000003a1      0x15d basalt/appinfo.auto.c.27.o
 
-.debug_str      0x0000000000000000      0x87f
- .debug_str     0x0000000000000000      0x666 src/arcTime.c.27.o
-                                        0x6f8 (size before relaxing)
- .debug_str     0x0000000000000666      0x219 basalt/appinfo.auto.c.27.o
+.debug_str      0x0000000000000000      0x898
+ .debug_str     0x0000000000000000      0x67f src/arcTime.c.27.o
+                                        0x711 (size before relaxing)
+ .debug_str     0x000000000000067f      0x219 basalt/appinfo.auto.c.27.o
                                         0x418 (size before relaxing)
 
 .debug_frame    0x0000000000000000      0x278
